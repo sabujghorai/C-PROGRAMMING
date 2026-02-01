@@ -1,6 +1,10 @@
 #include<stdio.h>
     int main(){
     int a[5] = {20,21,22,34,23};
-        printf("%d",a[2]); // prints the 2nd index which is 22
+
+    for(int i = 0;i<5 ; i++){
+        printf("%d\n",a[i]);
+    }
 return 0;
 }
+
