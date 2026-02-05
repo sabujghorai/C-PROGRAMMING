@@ -5,6 +5,6 @@
     for(int i=0 ; i<=4; i++){
         sum = sum + arr[i];
     }
-    printf("sum is : %d",sum);
+    printf("sum is :%d ",sum);
 return 0;
 }
