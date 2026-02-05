@@ -21,9 +21,9 @@ print it's roll number [Roll numbers here refers to the index of the array ]   *
 
 #include<stdio.h>
     int main(){
-    int marks[10] = {95,90,31,25,100,50,65,89,97,30};
+    int marks[10] = {10,20,30,34,45,56,56,75,33,88};
 
-    for(int i=1; i<10 ;i++){
+    for(int i=0; i<10 ;i++){
         if (marks[i]<35)
         {printf(" Roll number is : %d \n",i);
         }
