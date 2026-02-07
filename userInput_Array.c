@@ -13,23 +13,23 @@
 //     }
 // return 0;
 
-// Write a C program to read n elements into an array and print them.
+// // Write a C program to read n elements into an array and print them.
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int n, arr[100];
+// int main() {
+//     int n, arr[100];
 
-    printf("Enter number of elements: ");
-    scanf("%d", &n);
+//     printf("Enter number of elements: ");
+//     scanf("%d", &n);
 
-    for(int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+//     for(int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
 
-    for(int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
+//     for(int i = 0; i < n; i++) {
+//         printf("%d ", arr[i]);
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
