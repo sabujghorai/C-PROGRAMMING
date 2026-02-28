@@ -6,5 +6,6 @@
     printf("%p\n",&arr[2]);
     printf("%p\n",&arr[3]);
     printf("%p\n",&arr[4]);
+    printf("%p\n",&arr[5]);
 return 0;
 }
