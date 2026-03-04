@@ -40,13 +40,28 @@ Some of the important concepts I am learning and implementing:
 
 Each program is organized and added as I progress in my learning journey.
 
-Example:
 
-C-Programming/
-│
-├── hello_world.c
-├── variables.c
-├── loops.c
-├── functions.c
-├── arrays.c
-└── pointers.c
+---
+
+## 🚀 Learning Goals
+
+My goals for learning C Programming are:
+
+- Understand low-level programming concepts
+- Improve problem solving skills
+- Prepare for Data Structures and Algorithms
+- Build a strong base for system programming
+
+---
+
+## 📈 Learning Progress
+
+I will continue to update this repository as I learn new concepts and solve more problems.
+
+---
+
+## ⭐ Support
+
+If you find this repository helpful or interesting, feel free to give it a **star ⭐**.
+
+Thank you for visiting my repository!
