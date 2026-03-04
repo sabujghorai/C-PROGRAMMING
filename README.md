@@ -41,3 +41,12 @@ Some of the important concepts I am learning and implementing:
 Each program is organized and added as I progress in my learning journey.
 
 Example:
+
+C-Programming/
+│
+├── hello_world.c
+├── variables.c
+├── loops.c
+├── functions.c
+├── arrays.c
+└── pointers.c
