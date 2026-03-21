@@ -6,8 +6,10 @@
         int attack;
     };
     struct pokemon pikachu;
+    printf("Enter the attack of pikachu :");
+    scanf("%d",&pikachu.attack);
     pikachu.hp = 80;
-    pikachu.attack = 70;
+    // pikachu.attack = 70;
     pikachu.speed = 100;
 
     struct pokemon charizard ;
@@ -16,7 +18,7 @@
     charizard.speed = 200;
 
 
-printf("%d \n",pikachu.attack);
-printf("%d",charizard.attack);
+printf(" Attack of pikachu stored is = %d \n",pikachu.attack);
+// printf("%d",charizard.attack);
 return 0;
 }
