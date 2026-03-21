@@ -10,7 +10,13 @@
     pikachu.attack = 70;
     pikachu.speed = 100;
 
-    
-printf("%d",pikachu.attack);
+    struct pokemon charizard ;
+    charizard.hp = 120;
+    charizard.attack = 90;
+    charizard.speed = 200;
+
+
+printf("%d \n",pikachu.attack);
+printf("%d",charizard.attack);
 return 0;
 }
