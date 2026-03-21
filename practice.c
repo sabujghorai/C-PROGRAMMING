@@ -10,14 +10,14 @@
 return 0;
 }
 
-// The area of the area....
-#include<stdio.h>
-  int main(){
-  int a;
-  printf("Enter the sid :");
-  scanf("%d",&a);
+// // The area of the area....
+// #include<stdio.h>
+//   int main(){
+//   int a;
+//   printf("Enter the sid :");
+//   scanf("%d",&a);
 
-  printf("The area of the squre is = %d",a*a );
+//   printf("The area of the squre is = %d",a*a );
 
-return 0;
-}
+// return 0;
+// }
