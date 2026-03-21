@@ -19,6 +19,5 @@
 
 
 printf(" Attack of pikachu stored is = %d \n",pikachu.attack);
-// printf("%d",charizard.attack);
 return 0;
 }
