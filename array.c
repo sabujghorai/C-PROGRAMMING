@@ -48,7 +48,6 @@
 #include<stdio.h>
     int main(){
     int marks[5];
-    
     for(int i=0;i<=4;i++){
         printf("Enter the marks of the students :");
         scanf("%d",&marks[i]);
