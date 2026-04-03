@@ -1,13 +1,11 @@
 #include<stdio.h>
     int main(){
-    int a[5];
-    for (int i = 0; i<=4 ; i++){
-        printf("Enter %d number :",i+1);
-        scanf("%d",&a[i]);
+        int arr[5] = {10,20,30,40,50};
+        printf("The array elements are :");
+        
+        for(int i=0; i <= 4;i++){
+            printf(" %d",arr[i]);
         }
 
-    for(int j = 0 ;j<=4 ; j++){
-        printf("%d \n",a[j]);
-    }
 return 0;
 }
