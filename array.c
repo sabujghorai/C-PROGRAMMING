@@ -78,10 +78,12 @@
 // Find the maximum value out of all the elements in array
 
 #include<stdio.h>
+#include<limits.h>
     int main(){
     int max_value[6] ={3,4,5,6,7,9};
     // int max = -1; sabse chota number
-    int max = max_value[0];
+    int max = INT_MIN; // -2147483648%  this is the minimum valus for int datatype
+    // int max = max_value[0];
     for(int i=0;i<=5;i++){
         if(max<max_value[i]){
             max = max_value[i];
