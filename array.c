@@ -60,3 +60,16 @@
 //     }  
 // return 0;
 // }
+
+// Calculate the product of all the elements in given array
+
+#include<stdio.h>
+    int main(){
+    int arr_product[5] = {1,2,3,4,5};
+    int product = 1;
+    for(int i=0;i<=4;i++){
+        product = product*arr_product[i];
+    }
+    printf("The product of all the elements is : %d ",product);
+return 0;
+}
