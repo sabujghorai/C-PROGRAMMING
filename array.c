@@ -80,7 +80,8 @@
 #include<stdio.h>
     int main(){
     int max_value[6] ={3,4,5,6,7,9};
-    int max = -1;
+    // int max = -1; sabse chota number
+    int max = max_value[0];
     for(int i=0;i<=5;i++){
         if(max<max_value[i]){
             max = max_value[i];
