@@ -77,19 +77,40 @@
 
 // Find the maximum value out of all the elements in array
 
+// #include<stdio.h>
+// #include<limits.h>
+//     int main(){
+//     int max_value[6] ={3,4,5,6,7,9};
+//     // int max = -1; sabse chota number
+//     int max = INT_MIN; // -2147483648%  this is the minimum valus for int datatype
+//     // int max = max_value[0];
+//     for(int i=0;i<=5;i++){
+//         if(max<max_value[i]){
+//             max = max_value[i];
+//         }
+//     }
+//     printf("The maximum value is : %d",max);
+
+// return 0;
+// }
+
+
+// Given an array og integers, change the value
+//  of all odd indexed elements to it's second multople and increment all even indexed value by 10
+
 #include<stdio.h>
-#include<limits.h>
     int main(){
-    int max_value[6] ={3,4,5,6,7,9};
-    // int max = -1; sabse chota number
-    int max = INT_MIN; // -2147483648%  this is the minimum valus for int datatype
-    // int max = max_value[0];
-    for(int i=0;i<=5;i++){
-        if(max<max_value[i]){
-            max = max_value[i];
+    int arr[7] = {1,2,3,4,5,6,7};
+    for(int i=0;i<=6;i++){
+        if(i%2 != 0){
+            arr[i] = arr[i]*2;
+        }
+        else{
+            arr[i]+=10;
         }
     }
-    printf("The maximum value is : %d",max);
-
+    for(int i=0;i<=6;i++){
+    printf("%d ",arr[i]);
+    }
 return 0;
 }
