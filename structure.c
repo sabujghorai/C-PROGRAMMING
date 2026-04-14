@@ -17,7 +17,6 @@
     charizard.attack = 90;
     charizard.speed = 200;
 
-
 printf(" Attack of pikachu stored is = %d \n",pikachu.attack);
 return 0;
 }
