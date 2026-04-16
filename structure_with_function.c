@@ -11,7 +11,6 @@ int area(struct Rectangle r) {
 
 int main() {
     struct Rectangle rect;
-
     rect.length = 10;
     rect.width = 5;
 
