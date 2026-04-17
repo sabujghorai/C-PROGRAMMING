@@ -17,6 +17,5 @@ int main() {
     for(int i = 0; i < 3; i++) {
         printf("Roll: %d, Marks: %.2f\n", s[i].roll, s[i].marks);
     }
-
     return 0;
 }
