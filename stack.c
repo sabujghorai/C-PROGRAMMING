@@ -37,7 +37,6 @@ void display() {
         printf("%d\n", stack[i]);
     }
 }
-
 int main() {
     int choice, value;
 
