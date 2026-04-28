@@ -9,7 +9,6 @@
   printf("the area of the rectangle is : %d",a*b);
 return 0;
 }
-
 // The area of the area....
 #include<stdio.h>
   int main(){
