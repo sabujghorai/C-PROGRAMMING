@@ -3,13 +3,15 @@
 #include <string.h>
 
 // Comment Node
-struct Comment {
+struct Comment
+{
     char text[100];
     struct Comment *next;
 };
 
 // Post Node
-struct Post {
+struct Post
+{
     int id;
     char content[200];
 
@@ -23,12 +25,12 @@ struct Post {
 
 struct Post *head = NULL;
 
-
 // Add Post
-void addPost(int id, char content[]) {
+void addPost(int id, char content[])
+{
 
     struct Post *newPost =
-        (struct Post*)malloc(sizeof(struct Post));
+        (struct Post *)malloc(sizeof(struct Post));
 
     newPost->id = id;
 
@@ -40,47 +42,54 @@ void addPost(int id, char content[]) {
     newPost->comments = NULL;
     newPost->next = NULL;
 
-    if(head == NULL) {
+    if (head == NULL)
+    {
         head = newPost;
         return;
     }
 
     struct Post *temp = head;
 
-    while(temp->next != NULL) {
+    while (temp->next != NULL)
+    {
         temp = temp->next;
     }
 
     temp->next = newPost;
 }
 
-
 // Add Comment
-void addComment(int postId, char comment[]) {
+void addComment(int postId, char comment[])
+{
 
     struct Post *temp = head;
 
-    while(temp != NULL) {
+    while (temp != NULL)
+    {
 
-        if(temp->id == postId) {
+        if (temp->id == postId)
+        {
 
             struct Comment *newComment =
-                (struct Comment*)
-                malloc(sizeof(struct Comment));
+                (struct Comment *)
+                    malloc(sizeof(struct Comment));
 
             strcpy(newComment->text, comment);
 
             newComment->next = NULL;
 
-            if(temp->comments == NULL) {
+            if (temp->comments == NULL)
+            {
                 temp->comments = newComment;
             }
-            else {
+            else
+            {
 
                 struct Comment *c =
                     temp->comments;
 
-                while(c->next != NULL) {
+                while (c->next != NULL)
+                {
                     c = c->next;
                 }
 
@@ -96,15 +105,17 @@ void addComment(int postId, char comment[]) {
     printf("Post not found\n");
 }
 
-
 // Like Post
-void likePost(int postId) {
+void likePost(int postId)
+{
 
     struct Post *temp = head;
 
-    while(temp != NULL) {
+    while (temp != NULL)
+    {
 
-        if(temp->id == postId) {
+        if (temp->id == postId)
+        {
             temp->likes++;
             return;
         }
@@ -113,15 +124,17 @@ void likePost(int postId) {
     }
 }
 
-
 // Share Post
-void sharePost(int postId) {
+void sharePost(int postId)
+{
 
     struct Post *temp = head;
 
-    while(temp != NULL) {
+    while (temp != NULL)
+    {
 
-        if(temp->id == postId) {
+        if (temp->id == postId)
+        {
             temp->shares++;
             return;
         }
@@ -130,17 +143,18 @@ void sharePost(int postId) {
     }
 }
 
-
 // Delete Post
-void deletePost(int postId) {
+void deletePost(int postId)
+{
 
     struct Post *temp = head;
     struct Post *prev = NULL;
 
-    if(head == NULL)
+    if (head == NULL)
         return;
 
-    if(head->id == postId) {
+    if (head->id == postId)
+    {
 
         head = head->next;
 
@@ -149,15 +163,17 @@ void deletePost(int postId) {
         return;
     }
 
-    while(temp != NULL &&
-          temp->id != postId) {
+    while (temp != NULL &&
+           temp->id != postId)
+    {
 
         prev = temp;
 
         temp = temp->next;
     }
 
-    if(temp == NULL) {
+    if (temp == NULL)
+    {
         printf("Post not found\n");
         return;
     }
@@ -167,12 +183,13 @@ void deletePost(int postId) {
     free(temp);
 }
 
-
 // Display Comments
 void displayComments(
-    struct Comment *commentHead) {
+    struct Comment *commentHead)
+{
 
-    while(commentHead != NULL) {
+    while (commentHead != NULL)
+    {
 
         printf("   - %s\n",
                commentHead->text);
@@ -182,12 +199,12 @@ void displayComments(
     }
 }
 
-
 // Reverse Display
 void displayReverse(
-    struct Post *node) {
+    struct Post *node)
+{
 
-    if(node == NULL)
+    if (node == NULL)
         return;
 
     displayReverse(node->next);
@@ -212,9 +229,9 @@ void displayReverse(
         node->comments);
 }
 
-
 // Main Function
-int main() {
+int main()
+{
 
     addPost(
         1,
@@ -228,7 +245,6 @@ int main() {
         3,
         "Started DSA Practice");
 
-
     addComment(
         1,
         "Great work");
@@ -241,7 +257,6 @@ int main() {
         2,
         "Nice post");
 
-
     likePost(1);
     likePost(1);
 
@@ -249,9 +264,8 @@ int main() {
 
     deletePost(3);
 
-
     printf(
-    "\nSOCIAL MEDIA FEED\n");
+        "\nSOCIAL MEDIA FEED\n");
 
     displayReverse(head);
 

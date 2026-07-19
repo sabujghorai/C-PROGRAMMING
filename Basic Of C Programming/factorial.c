@@ -1,26 +1,31 @@
-#include<stdio.h>
-int main(){
-  int a ;
+#include <stdio.h>
+int main()
+{
+  int a;
   printf("Enter a number :");
-  scanf("%d",&a);
+  scanf("%d", &a);
   int fact = 1;
-  for(int i=1;i<=a;i++){
-    fact = fact*i;
+  for (int i = 1; i <= a; i++)
+  {
+    fact = fact * i;
   }
-  printf("factorial of your number is = %d",fact);
+  printf("factorial of your number is = %d", fact);
   return 0;
 }
 
 // even or odd
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+int main()
+{
   int a;
   printf("enter a number :");
-  scanf("%d",&a);
-  if (a%2 == 0){
+  scanf("%d", &a);
+  if (a % 2 == 0)
+  {
     printf("EVEN");
   }
-  else{
+  else
+  {
     printf("ODD");
   }
   return 0;

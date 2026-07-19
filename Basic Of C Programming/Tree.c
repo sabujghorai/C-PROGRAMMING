@@ -2,15 +2,17 @@
 #include <stdlib.h>
 
 // Structure of tree node
-struct Node {
+struct Node
+{
     int data;
-    struct Node* left;
-    struct Node* right;
+    struct Node *left;
+    struct Node *right;
 };
 
 // Function to create new node
-struct Node* createNode(int value) {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+struct Node *createNode(int value)
+{
+    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
 
     newNode->data = value;
     newNode->left = NULL;
@@ -20,7 +22,8 @@ struct Node* createNode(int value) {
 }
 
 // Inorder Traversal
-void inorder(struct Node* root) {
+void inorder(struct Node *root)
+{
     if (root == NULL)
         return;
 
@@ -30,7 +33,8 @@ void inorder(struct Node* root) {
 }
 
 // Preorder Traversal
-void preorder(struct Node* root) {
+void preorder(struct Node *root)
+{
     if (root == NULL)
         return;
 
@@ -40,7 +44,8 @@ void preorder(struct Node* root) {
 }
 
 // Postorder Traversal
-void postorder(struct Node* root) {
+void postorder(struct Node *root)
+{
     if (root == NULL)
         return;
 
@@ -49,10 +54,11 @@ void postorder(struct Node* root) {
     printf("%d ", root->data);
 }
 
-int main() {
+int main()
+{
 
     // Creating tree
-    struct Node* root = createNode(1);
+    struct Node *root = createNode(1);
     root->left = createNode(2);
     root->right = createNode(3);
     root->left->left = createNode(4);
