@@ -13,7 +13,6 @@ int main()
     pikachu.hp = 80;
     // pikachu.attack = 70;
     pikachu.speed = 100;
-
     struct pokemon charizard;
     charizard.hp = 120;
     charizard.attack = 90;
